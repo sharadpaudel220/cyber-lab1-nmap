@@ -6,9 +6,9 @@ services:
     networks:
       - labnet
     ports:
-      - "2222:22"
-      - "8080:80"
-      - "9090:9090"
+  - "2223:22"   # changed from 2222 to 2223
+  - "8081:80"   # changed from 8080 to 8081
+  - "9091:9090" # changed from 9090 to 9091
 
 networks:
   labnet:
