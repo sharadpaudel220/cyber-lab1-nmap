@@ -1,0 +1,15 @@
+version: "3"
+services:
+  lab-target:
+    build: .
+    container_name: lab-target
+    networks:
+      - labnet
+    ports:
+      - "2222:22"
+      - "8080:80"
+      - "9090:9090"
+
+networks:
+  labnet:
+    driver: bridge
